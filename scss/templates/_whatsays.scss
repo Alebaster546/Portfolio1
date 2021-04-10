@@ -1,0 +1,136 @@
+.whatsays {
+    background-color: #f9fbfb;
+    height: 100%;
+}
+
+.what_says {
+    text-align: center;
+    padding-top: 130px;
+}
+
+.what_says h3 {
+    @extend %style_name_sectionH;
+}
+
+.what_says p {
+    @extend %style_name_sectionP;
+}
+
+
+
+.carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 160px;
+
+    padding-bottom: 120px;
+}
+
+.carousel.pointer-event {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+}
+
+.carousel-indicators {
+    justify-content: left;
+    margin-left: 180px;
+}
+
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: green;
+}
+
+.control-box {
+    height: 45px;
+    text-align: right;
+    width: 100%;
+}
+
+.carousel-control {
+    background: #666;
+    border: 0px;
+    border-radius: 0px;
+    display: inline-block;
+    font-size: 34px;
+    font-weight: 200;
+    line-height: 18px;
+    opacity: 0.5;
+    padding: 4px 30px 0px;
+    margin-left: 20px;
+    position: static;
+    height: 45px;
+    width: 30px;
+
+}
+
+
+
+.imagefoto {
+    height: 360px;
+    width: 400px;
+    background-color: #eaebed;
+}
+
+.imagefoto img {
+    width: 280px;
+    height: 360px;
+    margin: 0 auto;
+    background-size: contain
+}
+
+.textinfo {
+    width: 670px;
+    float: right;
+    height: 360px;
+    background-color: #eaebed;
+    text-align: center;
+}
+
+.textport {
+    width: 460px;
+    height: 160px;
+    padding-top: 95px;
+    margin: 0 auto
+}
+
+.textport p {
+    @extend %otions_fontral400;
+    font-size: 16px;
+
+}
+
+.textport h3 {
+    @extend %otions_fontmon700;
+    font-size: 16px;
+
+}
+
+.textport span {
+    @extend %otions_fontral500;
+    font-size: 14px;
+    color: #757776;
+}
+
+.checked {
+    color: orange;
+}
+
+.star {
+    margin-top: 80px;
+}
+
+
+@media(max-width:688px) {
+    .what_says h3 {
+        font-size: 25px;
+    }
+
+    .what_says p {
+        font-size: 15px;
+    }
+}

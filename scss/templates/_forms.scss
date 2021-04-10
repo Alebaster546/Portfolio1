@@ -1,0 +1,126 @@
+.forms {
+    width: 100%;
+    min-height: 790px;
+    background-image: url(/image/fon_christmas2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.forms_items {
+    margin: 0 auto;
+    padding-top: 150px;
+    max-width: 1300px;
+    min-height: 465px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.backgroundforms1 {
+    width: 615px;
+    background-color: #4b5a63;
+    height: 460px;
+    opacity: 0.95;
+    margin: 5px 5px;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #4b5a63;
+    padding: 20px;
+}
+
+
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #6e7981;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    resize: vertical;
+    background-color: #4b5a63;
+    color: white;
+}
+
+input[type=submit] {
+    margin-top: 15px;
+    background-color: #6eeee4;
+    color: #214744;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #06f0f8;
+}
+
+.backgroundforms2 {
+    width: 500px;
+    background-color: #4b5a63;
+    height: 460px;
+    opacity: 0.95;
+    margin: 5px 5px;
+    padding-right: 10px;
+}
+
+.info_text {
+    max-width: 460px;
+    height: 170px;
+}
+
+.nomer {
+    max-width: 460px;
+    padding-top: 30px;
+    margin-left: 30px;
+}
+
+.nomer p {
+    @extend %otions_fontral400;
+    font-size: 15px;
+    color: #838e95;
+    margin-top: -12px;
+}
+
+.adress {
+    max-width: 460px;
+    margin-top: 35px;
+    margin-left: 30px;
+}
+
+.adress p {
+    @extend %otions_fontral400;
+    font-size: 15px;
+    color: #838e95;
+    margin-top: -12px;
+}
+
+.googlemap {
+    max-width: 460px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 14px;
+    height: 240px;
+}
+
+@media(max-width:398px) {
+    .googlemap {
+        max-width: 320px;
+        margin-left: 30px;
+        margin-right: 5px;
+    }
+
+
+
+    .backgroundforms2 {
+        width: 320px;
+    }
+
+}

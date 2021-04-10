@@ -1,0 +1,39 @@
+$color_about_text2:#404141;
+$color_about_h2:#3e3f3f;
+$color_serv_h3:#f7f7f7;
+$color_serv_p:#d3d3d3;
+$background_serv_img: #4f4f4f;
+
+%style_serv_h3 {
+    font-size: 20px;
+    @extend %otions_fontmerriw700;
+    color: $color_serv_h3;
+}
+
+%style_serv_p {
+    font-size: 16px;
+    color: $color_serv_p;
+    @extend %otions_fontral400;
+}
+
+%style_btn_serv_img {
+    width: 168px;
+    height: 24px;
+    font-size: 18px;
+    @extend %otions_fontral500;
+    color: #eaecec;
+}
+
+%style_name_sectionH {
+    @extend %otions_fontmon700;
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #191919;
+}
+
+%style_name_sectionP {
+    @extend %otions_fontmerriw400;
+    font-size: 18px;
+    color: #616161;
+    text-transform: uppercase;
+}

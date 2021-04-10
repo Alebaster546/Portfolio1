@@ -1,0 +1,221 @@
+header {
+    background-color: #eff0f2;
+}
+
+.hedmenu {
+    display: flex;
+    height: 175px;
+    max-width: 100%;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.hedlogo {
+    margin-top: 65px;
+    height: 47px;
+    width: 112px;
+    border: 5px solid #170f1c;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: inset 1px 1px 1px rgba(154, 147, 140, 0.5);
+    margin-left: 150px;
+}
+
+.hedlogo p {
+    font-size: 16px;
+    @extend %otions_fontmon700;
+    color: #000000;
+    padding-top: 7px;
+}
+
+.hedlogo .collogo {
+    color: #77efe5;
+}
+
+.menu {
+    margin-top: 80px;
+    margin-right: 150px;
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    background-color: #606061;
+    cursor: pointer;
+
+}
+
+.burger i {
+    display: block;
+    width: 80%;
+    height: 4px;
+    background-color: #606061;
+    margin: 3px;
+
+}
+
+.mob-menu {
+    display: none;
+    position: fixed;
+    top: 140px;
+    right: 0;
+    left: 0;
+    background-color: white;
+    z-index: 10000;
+}
+
+.mob-menu ul {
+    padding: 20px;
+}
+
+.mob-menu ul li {
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.shopno {
+    margin-top: 135px;
+}
+
+.shopno h1 {
+    text-align: center;
+    font-size: 45px;
+    @extend %otions_fontmon700;
+    color: #505050;
+}
+
+.shopno .name {
+    background-color: #b2f2ee;
+}
+
+.hed_btn {
+    margin-top: 135px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.hed_btn a {
+    border: 2px solid #777879;
+    padding: 19px 45px;
+    border-radius: 1px;
+    font-size: 18px;
+    @extend %otions_fontmon400;
+    text-decoration: none;
+    color: #3c3c3d;
+}
+
+.holdress {
+    width: 100px;
+    float: right;
+    height: 100px;
+    margin-right: 200px;
+    padding-bottom: 120px;
+}
+
+.holdress .cupholder {
+
+    justify-content: end;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-top: 10px;
+
+}
+
+.holdress .shadowholder {
+    margin-top: -105px;
+    margin-left: 5px;
+}
+
+.holdress .holder {
+    margin-top: -155px;
+    margin-left: 20px;
+}
+
+@media(max-width:1920px) {
+
+
+    .hedmenu .show {
+        display: flex;
+    }
+
+    .hedmenu .show ul {
+        display: block;
+        width: 100px;
+        margin-top: 20px;
+        /* position: absolute; */
+    }
+
+    .burger {
+        display: inline-block;
+        width: 30px;
+        height: 25px;
+        background-color: #eff0f2;
+    }
+}
+
+@media(max-width:930px) {
+    .hedlogo {
+        margin-left: 60px;
+    }
+
+    .menu {
+        margin-right: 60px;
+    }
+
+    .shopno h1 {
+        font-size: 30px;
+    }
+
+    .hed_btn {
+        margin-top: 80px;
+
+    }
+
+    .hed_btn a {
+        padding: 12px 30px;
+    }
+
+    .holdress {
+        margin-right: 100px;
+        padding-bottom: 50px;
+    }
+
+    .holdress .cupholder {
+
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:600px) {
+    .shopno {
+        margin-top: 80px;
+    }
+
+    .shopno h1 {
+        font-size: 22px;
+    }
+
+    header {
+        min-height: 600px;
+    }
+
+}
+
+@media(max-width:400px) {
+    header {
+        min-height: 590px;
+    }
+
+    .hedlogo {
+        margin-left: 15px;
+    }
+
+    .menu {
+        margin-right: 15px;
+    }
+
+
+}

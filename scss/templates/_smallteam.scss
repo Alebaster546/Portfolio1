@@ -1,0 +1,117 @@
+.smallteam {
+    background-color: #ffffff;
+    height: 100%;
+}
+
+.small_team {
+    text-align: center;
+    padding-top: 130px;
+}
+
+.small_team h3 {
+    @extend %style_name_sectionH;
+}
+
+.small_team p {
+    @extend %style_name_sectionP;
+}
+
+.imageportret {
+    padding-top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1170px;
+    min-height: 770px;
+}
+
+.img_portret {
+    position: relative;
+    width: 373px;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin-top: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 25px solid #70f6eb;
+    margin-left: 15px;
+}
+
+.img_portret:hover .image {
+    opacity: 1;
+}
+
+.img_portret:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    width: 300px;
+    background-color: #70f6eb;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.text p {
+    @extend %otions_fontral400;
+    font-size: 16px;
+    color: #16312f;
+}
+
+.text h4 {
+    @extend %otions_fontmon700;
+    font-size: 16px;
+    color: #16312f;
+}
+
+.text span {
+    @extend %otions_fontral500;
+    font-size: 14px;
+    color: #757776;
+}
+
+.messenger_icons {
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+}
+
+@media(max-width:688px) {
+    .small_team h3 {
+        font-size: 25px;
+    }
+
+    .small_team p {
+        font-size: 15px;
+    }
+
+    .imageportret {
+        padding-top: 30px;
+    }
+}
